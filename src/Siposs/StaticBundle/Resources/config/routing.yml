@@ -1,0 +1,3 @@
+SipossStaticBundle_homepage:
+    pattern:  /
+    defaults: { _controller: SipossStaticBundle:Default:index }

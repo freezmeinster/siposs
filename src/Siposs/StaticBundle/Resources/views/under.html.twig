@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sistem Informasi POSS - UPI Under Maintenance</title>
+<link rel="Stylesheet" type="text/css" href="{{ asset('bundles/sipossstatic/css/reset.css')}}" />
+<link rel="Stylesheet" type="text/css" href="{{ asset('bundles/sipossstatic/css/main.css')}}" />
+	<script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/jquery-1.5.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/jquery.lwtCountdown-1.0.js')}}"></script>
+	<script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/jquery.spritely-0.6.js')}}" ></script>
+	<script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/runonload.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/form-feedback.js')}}"></script>
+	<script type="text/javascript" src="{{ asset('bundles/sipossstatic/js/init.js')}}"></script>
+</head>
+<body>
+
+	<div id="container">
+    <div id="shelf">
+	<div class="content">
+		<div class="logo"><a href="#"><img src="images/logo.png" alt="" /></a>
+		</div>
+<!-- Countdown dashboard start -->
+		<div id="countdown_dashboard">
+			<div class="dathsh days_dash">
+				<span class="dash_title">hari</span>
+				<div class="digit">0</div><!-- change this number  -->
+				<div class="digit">6</div>
+				<div class="digit">0</div>
+			</div>
+        <div class="dash hours_dash">
+				<span class="dash_title">jam</span>
+				<div class="digit">2</div>
+				<div class="digit">4</div>
+			</div>
+		<div class="dash minutes_dash">
+				<span class="dash_title">menit</span>
+				<div class="digit">6</div>
+				<div class="digit">0</div>
+			</div>
+         <div class="dash seconds_dash">
+				<span class="dash_title">detik</span>
+				<div class="digit">0</div>
+				<div class="digit">3</div>
+			</div>
+        </div>
+		<!-- Countdown dashboard end -->
+        <h1>
+			Maaf Kami belum selesai membuat baju nya nih.<br/>
+            Terima Kasih Sudah Berkunjung
+		</h1>
+        
+       <div class="play-area" id="rocket"></div>
+
+	   </div>
+	</div>
+</div>
+<script type="text/javascript">
+			// Initiate Countdown
+jQuery(document).ready(function() {
+	$("#countdown_dashboard").countDown({
+		targetOffset: {
+			'day': 		Day,
+			'month': 	Month,
+			'year': 	Year,
+			'hour': 	Hour,
+			'min': 		Minutes,
+			'sec': 		Second
+		},
+		omitWeeks: true
+	});
+});
+</script>
+<script type="text/javascript">
+
+        (function($) {
+            $(document).ready(function() {
+            $('#rocket').sprite({fps: 8, no_of_frames: 1})
+					.spRandom({
+					    top: 200,
+					    left: 200,
+						speed: 3500,
+						pause: 1000
+					});
+                 });
+        })(jQuery);
+</script>
+
+</body>
+</html>
